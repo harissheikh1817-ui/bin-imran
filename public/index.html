@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1a0813">
+  <meta name="description" content="Bin Imran - beautiful ladies suits. Lawn, cotton, embroidered, formal and winter wear. Cash on delivery and easy WhatsApp ordering.">
+  <title>Bin Imran – Suits for Ladies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Moving top banner -->
+  <div class="topbar"><div class="marquee" id="marquee"></div></div>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="#/" class="logo"><b>Bin Imran</b><small>Ladies Clothing</small></a>
+    <form class="search" id="searchForm">
+      <input id="searchInput" type="search" placeholder="Search suits..." aria-label="Search suits">
+      <button type="submit" aria-label="Search">🔍</button>
+    </form>
+    <nav class="actions">
+      <a href="#/account">👤<span>Account</span></a>
+      <a href="#/wishlist">♡<span>Wishlist</span><em id="wishCount" hidden>0</em></a>
+      <a href="#/cart">🛍<span>Cart</span><em id="cartCount" hidden>0</em></a>
+    </nav>
+  </header>
+  <nav class="menu" id="menu">
+    <a href="#/shop/Lawn">Lawn</a>
+    <a href="#/shop/Cotton">Cotton</a>
+    <a href="#/shop/Embroidered">Embroidered</a>
+    <a href="#/shop/Formal">Formal</a>
+    <a href="#/shop/Winter">Winter</a>
+    <a href="#/shop/new">New In</a>
+    <a href="#/shop/sale" class="hot">Sale</a>
+  </nav>
+
+  <!-- Page content is drawn here by app.js -->
+  <main id="app"></main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="foot-grid">
+      <div>
+        <a href="#/" class="logo"><b>Bin Imran</b><small>Ladies Clothing</small></a>
+        <p>Beautiful, comfortable suits for ladies, from everyday lawn to festive wear. Easy ordering on WhatsApp.</p>
+      </div>
+      <div>
+        <h5>Shop</h5>
+        <a href="#/shop/Lawn">Lawn</a><a href="#/shop/Cotton">Cotton</a><a href="#/shop/Embroidered">Embroidered</a><a href="#/shop/Formal">Formal</a><a href="#/shop/Winter">Winter</a>
+      </div>
+      <div>
+        <h5>Help</h5>
+        <a href="#/help">Track Order</a><a href="#/help">Exchange Policy</a><a href="#/help">Size Guide</a><a href="#/help">FAQs</a><a href="#/help">Contact Us</a>
+      </div>
+      <div>
+        <h5>Contact Us</h5>
+        <p id="fEmail"></p><p id="fPhone"></p><p id="fAddress"></p>
+        <h5 style="margin-top:14px">Payment</h5>
+        <p>💵 Cash on Delivery</p>
+      </div>
+    </div>
+    <div class="copy">© <span id="fYear"></span> Bin Imran. All rights reserved. · <a href="#/help">Privacy Policy</a> | <a href="#/help">Terms &amp; Conditions</a></div>
+  </footer>
+
+  <!-- Floating WhatsApp button -->
+  <a class="wa-float" id="waFloat" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
+  <div class="toast" id="toast"></div>
+
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
